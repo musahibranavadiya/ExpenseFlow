@@ -1,0 +1,478 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>ExpenseFlow</title>
+
+</head>
+
+
+<body>
+
+
+    <div class="main">
+
+
+        <!-- ........................................... side bar start -->
+
+        <div class="sidebar">
+
+            <div class="logo-area">
+
+                <div class="logo">
+
+                    <i class="fa-solid fa-wallet"></i>
+
+                </div>
+
+                <h2>ExpenseFlow</h2>
+
+            </div>
+
+
+            <!-- .................. end of logo area -->
+
+
+            <ul>
+
+                <li class="act">
+
+                    <a href="#">
+
+                        <i class="fa-solid fa-table-cells-large"></i>
+
+                        Dashboard
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="#">
+
+                        <i class="fa-solid fa-receipt"></i>
+
+                        Expenses
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="#">
+
+                        <i class="fa-solid fa-wallet"></i>
+
+                        Budget
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="#">
+
+                        <i class="fa-solid fa-gear"></i>
+
+                        Settings
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+
+            <!-- .................. profile -->
+
+
+            <div class="profile">
+
+                <div class="profile-image">
+
+                    <img src="" alt="">
+
+                </div>
+
+                <p>Musahib</p>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- ........................................................... end of sidebar -->
+
+
+
+        <!-- ........................................................... start of content -->
+
+
+        <div class="contant">
+
+
+            <!-- .......................................................... start navbar -->
+
+
+            <div class="navbar">
+
+                <h1>Overview</h1>
+
+
+                <div class="navbar-right">
+
+
+                    <div class="search">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <input
+                            type="text"
+                            id="searchInput"
+                            placeholder="Search expenses..."
+                        >
+
+                    </div>
+
+
+                    <!-- ................................. end of search -->
+
+
+                    <div class="notif">
+
+                        <i class="fa-regular fa-bell"></i>
+
+                        <span></span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <!-- .......................................................... end of navbar -->
+
+
+
+            <!-- .......................................................... start big card -->
+
+
+            <div class="big-card">
+
+
+                <div class="card">
+
+                    <p>Total Balance</p>
+
+                    <h2 id="totalBalance">₹24,750</h2>
+
+                    <span>Updated just now</span>
+
+                </div>
+
+
+
+                <div class="card">
+
+                    <p>Spent this month</p>
+
+                    <h2 id="spentAmount">₹5,250</h2>
+
+                    <span>
+
+                        <i class="fa-solid fa-arrow-trend-down"></i>
+
+                        On track with budget
+
+                    </span>
+
+                </div>
+
+
+
+                <div class="card budget-card">
+
+                    <p>Budget Remaining</p>
+
+                    <h2 id="budgetRemaining">₹4,750</h2>
+
+
+                    <div class="progress">
+
+                        <div class="progress-bar">
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+            <!-- .............................................. end of big card -->
+
+
+
+            <!-- .............................................. start lower content -->
+
+
+            <div class="nower-contant">
+
+
+                <!-- .............................................. Recent Expenses -->
+
+
+                <div class="expense-title">
+
+                    <h2>Recent Expenses</h2>
+
+                    <a href="#">View All</a>
+
+                </div>
+
+
+                <!-- .............................................. Expense 1 -->
+
+
+                <div class="expense">
+
+
+                    <div class="expense-left">
+
+
+                        <div class="expense-icone">
+
+                            <i class="fa-solid fa-utensils"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <h3>Pizza Delivery</h3>
+
+                            <p>Food • 15 Aug 2023</p>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="expense-right">
+
+                        <h3>₹450</h3>
+
+                        <p>UPI</p>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- .............................................. Expense 2 -->
+
+
+                <div class="expense">
+
+
+                    <div class="expense-left">
+
+
+                        <div class="expense-icone">
+
+                            <i class="fa-solid fa-bus"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <h3>Bus Ticket</h3>
+
+                            <p>Travel • 14 Aug 2023</p>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="expense-right">
+
+                        <h3>₹100</h3>
+
+                        <p>Cash</p>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- .............................................. Expense 3 -->
+
+
+                <div class="expense">
+
+
+                    <div class="expense-left">
+
+
+                        <div class="expense-icone">
+
+                            <i class="fa-solid fa-wifi"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <h3>Internet Bill</h3>
+
+                            <p>Utilities • 12 Aug 2023</p>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="expense-right">
+
+                        <h3>₹850</h3>
+
+                        <p>Credit Card</p>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- .............................................. Add Expense -->
+
+
+                <div class="add-expense">
+
+
+                    <h2>Add Expense</h2>
+
+
+                    <input
+                        type="text"
+                        id="expenseName"
+                        placeholder="What did you pay for"
+                    >
+
+
+                    <div class="form-row">
+
+
+                        <div class="amount">
+
+                            <span>₹</span>
+
+                            <input
+                                type="number"
+                                id="expenseAmount"
+                                placeholder="0.00"
+                            >
+
+                        </div>
+
+
+                        <div class="category">
+
+
+                            <select id="expenseCategory">
+
+                                <option>Food</option>
+
+                                <option>Travel</option>
+
+                                <option>Shopping</option>
+
+                                <option>Utilities</option>
+
+                                <option>Education</option>
+
+                                <option>Entertainment</option>
+
+                                <option>Other</option>
+
+                            </select>
+
+
+                            <i class="fa-solid fa-chevron-down"></i>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                    <button id="addExpenseButton">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                        Add Expense
+
+                    </button>
+
+
+                </div>
+
+
+                <!-- .............................................. end Add Expense -->
+
+
+            </div>
+
+
+            <!-- .............................................. end lower content -->
+
+
+        </div>
+
+
+        <!-- ........................................................... end content -->
+
+
+    </div>
+
+
+    <!-- ........................................................... end main -->
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
